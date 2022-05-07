@@ -12,7 +12,8 @@
       "check-lint": "eslint . --ext ts --ext tsx --ext js",
       "format": "prettier --write .",
       "test-all": "npm run check-format && npm run check-lint && npm run check-types",
-      "commit": "git add . && cz"
+      "commit": "git add . && cz",
+      "release": "release-it"
    },
    "keywords": [],
    "author": "",
@@ -49,6 +50,7 @@
       "husky": "^7.0.4",
       "prettier": "^2.6.2",
       "process": "^0.11.10",
+      "release-it": "^15.0.0",
       "ts-node": "^10.7.0",
       "typescript": "^4.6.4",
       "webpack": "^5.72.0",
@@ -58,6 +60,11 @@
    "config": {
       "commitizen": {
          "path": "./node_modules/cz-conventional-changelog"
+      }
+   },
+   "release-it": {
+      "github": {
+         "release": true
       }
    }
 }
